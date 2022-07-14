@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  .mynavbar{
+    background-color: #e3f2fd;
+  }
+  .nb{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .nb span{
+    color: #ff0157;
+  }
+  .slider-img{
+    max-height: 85vh;
+  }
+  
+  .wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('Images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .box{
+    display: flex;
+    border: 1px solid #888;
+    font-weight: 500;
+    flex-direction: column;
+    background-color: rgba(255, 255,255, 0.8);
+    min-width: 400px;
+    border-radius: 5%;
+    padding: 25px;
+  }
+  .box .boxtitle{
+    text-align: center;
+  }
+  .box input{
+    width: 100%;
+  }
+  .form-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .form-footer a{
+    text-decoration: none;
+  }
+  
+  .form-footer a:hover{
+    font-weight: 900;
+    color: #777;
+  }
+
+  .has-error input{
+    border-color: rgb(246, 66, 66, 0.8);
+  }
+  .has-error em{
+    color: rgba(246, 66, 66, 0.8);
+  }
+  .has-success input{
+    border-color:rgba(30, 176, 30,0.8);
+  }
+  .pcard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .plist ul{
+    list-style: none;
+  }
+  .footer{
+    /* position: relative;*/
+    margin-top: 25px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3dadfd;
+    color: #000;
+    min-height: 80px;
+  }
+  .footer p{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  @media (max-width:991px) {
+    .slider-img{
+      max-height: 100vh;
+    }
+  }

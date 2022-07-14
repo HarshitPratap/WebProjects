@@ -1,0 +1,88 @@
+<%- include('./includes/header'); %>
+    <div class="container-fluid">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="/Images/bg.jpg" class="d-block w-100 slider-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Easy Transfer</h5>
+              <p>Send your file hassle free.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/Images/bg.jpg" class="d-block w-100 slider-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Easy Transfer</h5>
+              <p>Send your file hassle free.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/Images/bg.jpg" class="d-block w-100 slider-img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Easy Transfer</h5>
+              <p>Send your file hassle free.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container mt-4" id="pricing">
+      <div class="title-text">
+        <h2 class="text-center">Plans & Pricing</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card w-100 pcard">
+            <div class="card-body text-center">
+              <h5 class="card-title text-center">Basic</h5>
+              <ul class="plist">
+                <li>Limited Storage</li>
+                <li>5GB/Day</li>
+                <li>Password Protection</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card w-100 pcard">
+            <div class="card-body">
+              <h5 class="card-title text-center">Premimum</h5>
+              <ul class="plist">
+                <li>Unlimited Storage</li>
+                <li>15GB/Day</li>
+                <li>Password Protection</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card w-100 pcard">
+            <div class="card-body">
+              <h5 class="card-title text-center">Premimum Plus</h5>
+              <ul class="plist">
+                <li>Unlimited Storage</li>
+                <li>Unlimited Sharing</li>
+                <li>Password Protection</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<%- include('./includes/footer'); %>

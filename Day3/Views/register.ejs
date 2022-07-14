@@ -1,0 +1,38 @@
+<%-include('./includes/header'); %>
+    <section class="wraper">
+      <div class="box">
+        <% if (locals.status != null) {
+          %>
+          <div class="alert alert-<%=locals.status?'success':'danger'%>" role="alert">
+            <%=locals.message%>
+          </div>
+          <%
+        }%>
+        <h1 class="boxtitle">SIGNUP</h1>
+        <form action="/auth/register" method="post" id="signupForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" class="form-control" placeholder="Name" value="<%=locals.req?locals.req.username:''%>">
+          </div>
+          <div class="form-group">
+            <lable for="email">Email</lable>
+            <input type="email" name="email" id="email" class="form-control" placeholder="abc@localhost.com" value="<%=locals.req?locals.req.email:''%>">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="*******" value="<%=locals.req?locals.req.password:''%>">
+          </div>
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="*******" value="<%=locals.req?locals.req.confirm_password:''%>">
+          </div>
+          <div class="form-group mt-4">
+            <input type="submit" value="SIGNUP" class="btn btn-primary btn-lg">
+          </div>
+        </form>
+        <div class="form-footer mt-4">
+          <a href="/auth/">Already have an account?</a>
+        </div>
+      </div>
+    </section>
+<%- include('./includes/footer'); %>
